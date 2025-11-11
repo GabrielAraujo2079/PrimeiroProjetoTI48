@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PrimeiroProjetoTI48
 {
@@ -16,25 +17,26 @@ namespace PrimeiroProjetoTI48
         {
             InitializeComponent();
         }
-
-        
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            label1.Text = "Ola a todos...";
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_2(object sender, EventArgs e)
+        {
+            double soma1 = double.Parse(n1.Text);
+            double soma2 = double.Parse(n2.Text);
+            double resultado = soma1 + soma2;
+            n3.Text = resultado.ToString();
+
+        }
+
+        private void Subtracao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mult_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Divisao_Click(object sender, EventArgs e)
         {
 
         }

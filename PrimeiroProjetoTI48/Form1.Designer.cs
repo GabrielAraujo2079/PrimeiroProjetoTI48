@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.n1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.n2 = new System.Windows.Forms.TextBox();
+            this.n3 = new System.Windows.Forms.TextBox();
             this.Soma = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Subtracao = new System.Windows.Forms.Button();
+            this.Mult = new System.Windows.Forms.Button();
+            this.Divisao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,13 +47,13 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 1;
             // 
-            // textBox1
+            // n1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(109, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 30);
-            this.textBox1.TabIndex = 2;
+            this.n1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n1.Location = new System.Drawing.Point(109, 132);
+            this.n1.Name = "n1";
+            this.n1.Size = new System.Drawing.Size(222, 30);
+            this.n1.TabIndex = 2;
             // 
             // label2
             // 
@@ -65,21 +65,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Calculadora";
             // 
-            // textBox2
+            // n2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(421, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 30);
-            this.textBox2.TabIndex = 5;
+            this.n2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n2.Location = new System.Drawing.Point(421, 132);
+            this.n2.Name = "n2";
+            this.n2.Size = new System.Drawing.Size(222, 30);
+            this.n2.TabIndex = 5;
             // 
-            // textBox3
+            // n3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(267, 246);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 30);
-            this.textBox3.TabIndex = 6;
+            this.n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n3.Location = new System.Drawing.Point(267, 246);
+            this.n3.Name = "n3";
+            this.n3.Size = new System.Drawing.Size(222, 30);
+            this.n3.TabIndex = 6;
             // 
             // Soma
             // 
@@ -92,49 +92,52 @@
             this.Soma.UseVisualStyleBackColor = true;
             this.Soma.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // button1
+            // Subtracao
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(291, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 42);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Subtracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtracao.Location = new System.Drawing.Point(291, 317);
+            this.Subtracao.Name = "Subtracao";
+            this.Subtracao.Size = new System.Drawing.Size(75, 42);
+            this.Subtracao.TabIndex = 8;
+            this.Subtracao.Text = "-";
+            this.Subtracao.UseVisualStyleBackColor = true;
+            this.Subtracao.Click += new System.EventHandler(this.Subtracao_Click);
             // 
-            // button2
+            // Mult
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(398, 317);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 42);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "X";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Mult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mult.Location = new System.Drawing.Point(398, 317);
+            this.Mult.Name = "Mult";
+            this.Mult.Size = new System.Drawing.Size(75, 42);
+            this.Mult.TabIndex = 9;
+            this.Mult.Text = "X";
+            this.Mult.UseVisualStyleBackColor = true;
+            this.Mult.Click += new System.EventHandler(this.Mult_Click);
             // 
-            // button3
+            // Divisao
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(505, 317);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 42);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "/";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Divisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Divisao.Location = new System.Drawing.Point(505, 317);
+            this.Divisao.Name = "Divisao";
+            this.Divisao.Size = new System.Drawing.Size(75, 42);
+            this.Divisao.TabIndex = 10;
+            this.Divisao.Text = "/";
+            this.Divisao.UseVisualStyleBackColor = true;
+            this.Divisao.Click += new System.EventHandler(this.Divisao_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Divisao);
+            this.Controls.Add(this.Mult);
+            this.Controls.Add(this.Subtracao);
             this.Controls.Add(this.Soma);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.n3);
+            this.Controls.Add(this.n2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.n1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -145,14 +148,14 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox n1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox n2;
+        private System.Windows.Forms.TextBox n3;
         private System.Windows.Forms.Button Soma;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Subtracao;
+        private System.Windows.Forms.Button Mult;
+        private System.Windows.Forms.Button Divisao;
     }
 }
 
