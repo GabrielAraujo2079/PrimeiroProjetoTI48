@@ -21,7 +21,7 @@ namespace PrimeiroProjetoTI48
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            label1.Text = "Ola a todos";
+            label1.Text = "Ola a todos...";
         }
     }
 }
