@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F517FFBF-4F66-4ACF-BD49-D3BD3739005D}</ProjectGuid>
+    <ProjectGuid>{CA2C7C7C-DB12-44F4-A120-A4489EBC8FC8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PrimeiroProjetoTI48</RootNamespace>
     <AssemblyName>PrimeiroProjetoTI48</AssemblyName>
