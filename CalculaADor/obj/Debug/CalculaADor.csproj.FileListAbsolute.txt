@@ -1,0 +1,10 @@
+G:\Projetowinform\CalculaADor\CalculaADor\bin\Debug\CalculaADor.exe.config
+G:\Projetowinform\CalculaADor\CalculaADor\bin\Debug\CalculaADor.exe
+G:\Projetowinform\CalculaADor\CalculaADor\bin\Debug\CalculaADor.pdb
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.csproj.AssemblyReference.cache
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.Form1.resources
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.Properties.Resources.resources
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.csproj.GenerateResource.cache
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.csproj.CoreCompileInputs.cache
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.exe
+G:\Projetowinform\CalculaADor\CalculaADor\obj\Debug\CalculaADor.pdb
