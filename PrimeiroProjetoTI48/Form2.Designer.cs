@@ -1,6 +1,6 @@
 ﻿namespace PrimeiroProjetoTI48
 {
-    partial class frmAgendda
+    partial class Agenda
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblTelfone = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btn = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +123,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 1;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // lblID
             // 
@@ -189,10 +192,16 @@
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
-            // frmAgendda
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(962, 493);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.txtTelefone);
@@ -210,7 +219,8 @@
             this.Controls.Add(this.lblTelfone);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNome);
-            this.Name = "frmAgendda";
+            this.ForeColor = System.Drawing.Color.Red;
+            this.Name = "Agenda";
             this.Text = "Agenda v1,0";
             this.Load += new System.EventHandler(this.frmAgendda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
@@ -237,5 +247,6 @@
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
